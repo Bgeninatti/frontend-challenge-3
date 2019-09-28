@@ -1,9 +1,9 @@
 # DOCS
-The bots builder is the most powerful tool created by Landbot.
+The bots builder is the most powerful tool created by Landbot, and so the most complex.
 A bot is a graph of nodes connected to each other. Each node may be a simple message, a send email task, etc...
 
 ## BOT MODEL
-A bot contains nodes and connections. A special node with `id: 'bot_start'` is required to get the bot starter point.
+A bot contains nodes and connections. A special node with `id: 'bot_start'` is required to get a bot's starter point.
 ```
 {
   "nodes": {
