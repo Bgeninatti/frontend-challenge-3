@@ -75,6 +75,7 @@ export function getNodeConnections(node, graph) {
  */
 export function getLeafNodes(graph) {
   let nodesIds = Object.keys(graph.nodes);
+  // Compute all unique node Ids present in connections as sourcePath
   let outputConnectionsIds = new Set(
     Object.values(graph.connections).map(x => x.sourcePath)
   );
@@ -96,6 +97,7 @@ export function getLeafNodes(graph) {
  */
 export function getRootNodes(graph) {
   let nodesIds = Object.keys(graph.nodes);
+  // Compute all unique node Ids present in connections as targetPath
   let inputConnectionsIds = new Set(
     Object.values(graph.connections).map(x => x.targetPath)
   );
